@@ -1,0 +1,23 @@
+{
+    "os": "Linux-4.15.0-136-generic-x86_64-with-debian-buster-sid",
+    "python": "3.6.8",
+    "heartbeatAt": "2021-11-19T16:28:24.725434",
+    "startedAt": "2021-11-19T16:28:23.991456",
+    "docker": null,
+    "gpu": "Quadro P4000",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": "11.0.228",
+    "args": [
+        "--data_dir",
+        "/home/dev/classification/data",
+        "--out_channels",
+        "10"
+    ],
+    "state": "running",
+    "program": "trainer.py",
+    "codePath": "trainer.py",
+    "host": "psbhtjpmd",
+    "username": "dev",
+    "executable": "/home/dev/miniconda3/envs/vec/bin/python"
+}

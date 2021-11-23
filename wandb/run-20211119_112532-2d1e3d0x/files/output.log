@@ -1,0 +1,114 @@
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name   | Type   | Params
+----------------------------------
+0 | _model | ResNet | 11.2 M
+----------------------------------
+11.2 M    Trainable params
+0         Non-trainable params
+11.2 M    Total params
+44.727    Total estimated model params size (MB)
+Validation sanity check: 0it [00:00, ?it/s]
+/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/torch/nn/functional.py:1806: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+Validation sanity check:   0%|                                                                              | 0/2 [00:00<?, ?it/s]torch.Size([32, 10]) torch.Size([32, 10])
+Validation sanity check:  50%|███████████████████████████████████                                   | 1/2 [00:00<00:00,  4.83it/s]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|                                                                                           | 0/1875 [00:00<?, ?it/s]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|                                                              | 1/1875 [00:00<07:03,  4.43it/s, loss=2.35, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|                                                              | 2/1875 [00:00<04:09,  7.50it/s, loss=2.31, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|                                                              | 3/1875 [00:00<03:10,  9.84it/s, loss=2.31, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|▏                                                              | 4/1875 [00:00<02:41, 11.58it/s, loss=2.3, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|▏                                                             | 5/1875 [00:00<02:22, 13.08it/s, loss=2.28, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|▏                                                             | 6/1875 [00:00<02:11, 14.24it/s, loss=2.27, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|▏                                                             | 7/1875 [00:00<02:02, 15.27it/s, loss=2.26, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|▎                                                             | 8/1875 [00:00<01:55, 16.15it/s, loss=2.24, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   0%|▎                                                             | 9/1875 [00:00<01:49, 16.99it/s, loss=2.24, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▎                                                            | 10/1875 [00:00<01:45, 17.69it/s, loss=2.23, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▎                                                            | 11/1875 [00:00<01:41, 18.30it/s, loss=2.22, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▍                                                            | 12/1875 [00:00<01:38, 18.89it/s, loss=2.21, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▍                                                             | 13/1875 [00:00<01:35, 19.42it/s, loss=2.2, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▍                                                            | 14/1875 [00:00<01:33, 19.90it/s, loss=2.19, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▍                                                            | 15/1875 [00:00<01:31, 20.34it/s, loss=2.18, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▌                                                            | 16/1875 [00:00<01:31, 20.36it/s, loss=2.18, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▌                                                            | 17/1875 [00:00<01:29, 20.78it/s, loss=2.17, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▌                                                            | 18/1875 [00:00<01:27, 21.17it/s, loss=2.17, v_num=13]torch.Size([32, 10]) torch.Size([32, 10])
+Epoch 0:   1%|▌                                                            | 19/1875 [00:00<01:26, 21.49it/s, loss=2.16, v_num=13]torch.Size([32, 10]) torch.Size([32, 9])
+Traceback (most recent call last):
+  File "trainer.py", line 90, in <module>
+    model = main(args)
+  File "trainer.py", line 82, in main
+    trainer.fit(model)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/trainer/trainer.py", line 736, in fit
+    self._fit_impl, model, train_dataloaders, val_dataloaders, datamodule, ckpt_path
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/trainer/trainer.py", line 682, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/trainer/trainer.py", line 770, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/trainer/trainer.py", line 1193, in _run
+    self._dispatch()
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/trainer/trainer.py", line 1272, in _dispatch
+    self.training_type_plugin.start_training(self)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 202, in start_training
+    self._results = trainer.run_stage()
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/trainer/trainer.py", line 1282, in run_stage
+    return self._run_train()
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/trainer/trainer.py", line 1312, in _run_train
+    self.fit_loop.run()
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/base.py", line 145, in run
+    self.advance(*args, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/fit_loop.py", line 234, in advance
+    self.epoch_loop.run(data_fetcher)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/base.py", line 145, in run
+    self.advance(*args, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 195, in advance
+    batch_output = self.batch_loop.run(batch, batch_idx)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/base.py", line 145, in run
+    self.advance(*args, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 88, in advance
+    outputs = self.optimizer_loop.run(split_batch, optimizers, batch_idx)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/base.py", line 145, in run
+    self.advance(*args, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 219, in advance
+    self.optimizer_idx,
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 266, in _run_optimization
+    self._optimizer_step(optimizer, opt_idx, batch_idx, closure)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 386, in _optimizer_step
+    using_lbfgs=is_lbfgs,
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/core/lightning.py", line 1662, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/core/optimizer.py", line 164, in step
+    trainer.accelerator.optimizer_step(self._optimizer, self._optimizer_idx, closure, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/accelerators/accelerator.py", line 336, in optimizer_step
+    self.precision_plugin.optimizer_step(model, optimizer, opt_idx, closure, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 163, in optimizer_step
+    optimizer.step(closure=closure, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/torch/optim/optimizer.py", line 88, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/torch/optim/adam.py", line 92, in step
+    loss = closure()
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 148, in _wrap_closure
+    closure_result = closure()
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 160, in __call__
+    self._result = self.closure(*args, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 142, in closure
+    step_output = self._step_fn()
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 435, in _training_step
+    training_step_output = self.trainer.accelerator.training_step(step_kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/accelerators/accelerator.py", line 216, in training_step
+    return self.training_type_plugin.training_step(*step_kwargs.values())
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 213, in training_step
+    return self.model.training_step(*args, **kwargs)
+  File "/home/dev/classification/models/ResNet.py", line 60, in training_step
+    loss = self.loss_fn(y_pred, y)
+  File "/home/dev/classification/models/ResNet.py", line 41, in loss_fn
+    loss = nn.CrossEntropyLoss()(y_pred.to(torch.float32), y.to(torch.float32))
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/torch/nn/modules/loss.py", line 1152, in forward
+    label_smoothing=self.label_smoothing)
+  File "/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/torch/nn/functional.py", line 2846, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+RuntimeError: 0D or 1D target tensor expected, multi-target not supported

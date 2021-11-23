@@ -1,0 +1,1 @@
+python trainer.py --data_dir "/home/dev/classification/data" --out_channels 10

@@ -1,0 +1,13 @@
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/dev/miniconda3/envs/vec/lib/python3.6/site-packages/torch/nn/functional.py:1806: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+
+
+
+Testing:  98%|█████████▊| 308/313 [00:07<00:00, 54.81it/s]--------------------------------------------------------------------------------
+DATALOADER:0 TEST RESULTS
+{'test_acc': 0.9187300205230713, 'test_loss': 1.516877293586731}
+--------------------------------------------------------------------------------

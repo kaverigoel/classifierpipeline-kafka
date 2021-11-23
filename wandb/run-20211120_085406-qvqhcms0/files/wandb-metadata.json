@@ -1,0 +1,28 @@
+{
+    "os": "Linux-4.15.0-136-generic-x86_64-with-debian-buster-sid",
+    "python": "3.6.8",
+    "heartbeatAt": "2021-11-20T13:54:08.006879",
+    "startedAt": "2021-11-20T13:54:06.765039",
+    "docker": null,
+    "gpu": "Quadro P4000",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": "11.0.228",
+    "args": [
+        "--ip=127.0.0.1",
+        "--stdin=9003",
+        "--control=9001",
+        "--hb=9000",
+        "--Session.signature_scheme=\"hmac-sha256\"",
+        "--Session.key=b\"9e9eee91-b5e7-4fb1-a47f-bfa2c251219f\"",
+        "--shell=9002",
+        "--transport=\"tcp\"",
+        "--iopub=9004",
+        "--f=/tmp/tmp-2580d97HHgOzg1tB.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "host": "psbhtjpmd",
+    "username": "dev",
+    "executable": "/home/dev/miniconda3/envs/vec/bin/python"
+}
